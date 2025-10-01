@@ -1,0 +1,1 @@
+Dataset from here: https://www.kaggle.com/datasets/akshat103/e-waste-image-dataset
