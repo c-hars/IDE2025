@@ -35,7 +35,7 @@ class ImageClassifier:
         preds = self.model.predict(x, verbose=0)
 
         # Find top-1 class and the associated confidence
-        decoded_preds = decode_predictions_custom(preds, top=1)
+        decoded_preds = decode_predictions_custom(preds, self.class_names, top=1)
         predicted_class = decoded_preds[0][0][1]
         conf = decoded_preds[0][0][2]
 
